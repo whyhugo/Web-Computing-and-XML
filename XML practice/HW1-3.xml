@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+  <day name="Monday">
+    <class>
+      <name>線性代數</name>
+      <time start="09:10" end="12:10" />
+    </class>
+    <class>
+      <name>以 Excel 進行數據分析</name>
+      <time start="13:20" end="15:10" />
+    </class>
+    <class>
+      <name>網路計算與 XML</name>
+      <time start="17:30" end="20:25" />
+    </class>
+  </day>
+  <day name="Tuesday">
+    <class>
+      <name>程式設計</name>
+      <time start="09:10" end="12:10" />
+    </class>
+    <class>
+      <name>生物哲學導論</name>
+      <time start="15:30" end="17:20" />
+    </class>
+  </day>
+  <day name="Wednesday">
+    <class>
+      <name>管理學入門</name>
+      <time start="13:20" end="15:10" />
+    </class>
+  </day>
+  <day name="Thursday">
+    <class>
+      <name>微積分乙（一）</name>
+      <time start="13:20" end="15:10" />
+    </class>
+    <class>
+      <name>配色的基礎與實踐</name>
+      <time start="16:30" end="17:20" />
+    </class>
+  </day>
+  <day name="Friday">
+    <class>
+      <name>英文（三）</name>
+      <time start="10:20" end="12:10" />
+    </class>
+    <class>
+      <name>體育（羽球初級）</name>
+      <time start="15:30" end="17:20" />
+    </class>
+  </day>
+</schedule>

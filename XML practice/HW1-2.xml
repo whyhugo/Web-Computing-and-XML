@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<postal_transfer_order>
+    <payee_info>
+        <account_number>00049345</account_number>
+        <account_name>陽光基金會</account_name>
+    </payee_info>
+    <money>
+        <currency>TWD</currency>
+        <amount>0</amount>
+    </money>
+    <payer_info>
+        <name>Full Name</name>
+        <address>
+            <postal_code>000-00</postal_code>
+            <address>address</address>
+        </address>
+        <payer_id>000000000000</payer_id>
+    </payer_info>
+</postal_transfer_order>

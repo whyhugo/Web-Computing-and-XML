@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume>
+    <personalInfo>
+        <name>Frank Graham</name>
+        <position>Sales Associate</position>
+        <summary>
+            Accomplished, growth-focused professional with 8+ years of dynamic sales experience across multiple industries. Equipped a steadfast commitment to customer service excellence to enhance customer experience, maximize satisfaction, propel retention, achieve/exceed sales goals, and increase business revenue. Possess superb abilities to develop and maintain a high level of product knowledge to persuasively promote them to existing and potential customers.
+        </summary>
+        <contact>
+            <email>frank@novoresume.com</email>
+            <phone>123 444 555</phone>
+            <location>Montgomery, AL</location>
+            <linkedin>linkedin.com/in/frank.g</linkedin>
+        </contact>
+    </personalInfo>
+    
+    <skillList>
+        <skill>Sales Management</skill>
+        <skill>Revenue Growth</skill>
+        <skill>Customer Service</skill>
+        <skill>Customer Needs Analysis</skill>
+        <skill>Conflict Resolution</skill>
+        <skill>Work Ethic and Professionalism</skill>
+        <skill>Effective Sales Process</skill>
+        <skill>Persuasive Selling Approach</skill>
+    </skillList>
+    
+    <education>
+        <degree>Associate of Arts in Business Administration</degree>
+        <institution>University of Alabama at Birmingham</institution>
+    </education>
+    
+    <languages>
+        <language name="English" proficiency="Native or Bilingual Proficiency" />
+        <language name="Spanish" proficiency="Professional Working Proficiency" />
+        <language name="French" proficiency="Professional Working Proficiency" />
+    </languages>
+    
+    <interests>
+        <interest>Blockchain Technologies</interest>
+        <interest>Sailing</interest>
+        <interest>Web 3.0</interest>
+        <interest>Sustainability</interest>
+    </interests>
+    
+    <workExperience>
+        <job>
+            <title>Sales Associate</title>
+            <company>ShoPerfect Deluxe Mall</company>
+            <location>Montgomery, AL</location>
+            <date>11/2018 - Present</date>
+            <achievements>
+                <achievement>
+                    Formulate and execute compelling seasonal sales promotions, resulting in over 30% increase in-store sales for five consecutive months in the year 2019 and 2023.
+                </achievement>
+                <achievement>
+                    Proactively interact with customers to recommend products that best suit their tastes, interests, and needs, achieving a more than 98% in customer satisfaction rate.
+                </achievement>
+                <achievement>
+                    Work collaboratively with a team of 8 other sales associates to devise strategic sales solutions to achieve and exceed the department's monthly, quarterly, and yearly sales goals.
+                </achievement>
+                <achievement>
+                    Preserve up-to-date knowledge and information about the latest products or upcoming releases to effectively assist customers with various product-related concerns by providing accurate details.
+                </achievement>
+            </achievements>
+        </job>
+        <job>
+            <title>Retail Sales Associate</title>
+            <company>Storefront Sports Solutions</company>
+            <location>Auburn, AL</location>
+            <date>01/2015 - 10/2018</date>
+            <achievements>
+                <achievement>
+                    Devised and implemented an effective sales process, leading to consistently achieving the established sales goals and surpassing the monthly sales target by 12%.
+                </achievement>
+                <achievement>
+                    Conceptualized and enforced a customer loyalty program that prompted both existing and new customers to purchase twice as much merchandise, resulting in a 50% increase in the department's sales.
+                </achievement>
+                <achievement>
+                    Performed strategic upselling and cross-selling of women’s apparel and other sports products based on customer’s tastes and interests, which exceeded the yearly sales quotas by more than 10%.
+                </achievement>
+            </achievements>
+        </job>
+    </workExperience>
+    
+    <courses>
+        <course>
+            <title>Sales Training for High Performing Team Specialization</title>
+            <platform>Online Course - coursera.org</platform>
+        </course>
+        <course>
+            <title>Practical Sales Management Training</title>
+            <platform>ShoPerfect Deluxe Mall</platform>
+        </course>
+        <course>
+            <title>Sales Training: Practical Sales Techniques</title>
+            <platform>Online Course - udemy.com</platform>
+        </course>
+    </courses>
+</resume>

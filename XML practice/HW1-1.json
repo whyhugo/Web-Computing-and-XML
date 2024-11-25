@@ -1,0 +1,33 @@
+{
+    "business_card": {
+        "chinese": {
+            "personal_info": {
+                "job_title": "博士候選人",
+                "name": "陳俊仲"
+            },
+            "organization": {
+                "name": "國立臺灣大學土木工程學系結構工程組",
+                "address": "10617 臺北市羅斯福路四段一號",
+                "phone": "0233664278",
+                "mobile": "0932963289",
+                "fax": "0223622975",
+                "email": "jinggochen@ntu.edu.tw"
+            }
+        },
+        "english": {
+            "personal_info": {
+                "job_title": "Ph.D. Candidate, Structural Engineering Division",
+                "name": "Chun-Chung Jingo Chen"
+            },
+            "organization": {
+                "name": "Department of Civil Engineering National Taiwan University",
+                "address": "No. 1 Sec.4, Roosevelt Rd., Taipei 10617, Taiwan",
+                "phone": "0233664278",
+                "mobile": "0932963289",
+                "fax": "0223622975",
+                "email": "jinggochen@ntu.edu.tw"
+            }
+        }
+    }
+}
+  
