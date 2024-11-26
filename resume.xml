@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume>
+    <PersonalInformation>
+        <Name>Hsiu-Yu Wang (Hugo)</Name>
+        <Email>hugo.tw.wang@gmail.com</Email>
+        <GitHub>https://github.com/whyhugo</GitHub>
+        <Website>https://whyhugo.github.io</Website>
+        <Summary>
+            Second-year Computer Science student with four years of programming experience. Active in the SITCON community and skilled in Python, C, web development, data processing, web scraping, and NLP research. Eager to apply my skills to impactful projects while continuing to learn and grow in the field.
+        </Summary>
+    </PersonalInformation>
+    <Education>
+        <Degree>B.S. Computer Science and Information Engineering</Degree>
+        <Institution>National Taiwan Normal University</Institution>
+        <GraduationDate>Jun 2027 (expected)</GraduationDate>
+        <GPA>3.4/4.3</GPA>
+    </Education>
+    <Experience>
+        <Position>
+            <Title>Academic Affairs Lead</Title>
+            <Organization>NTNU CSIE Camp</Organization>
+            <Dates>Sep 2024 – present</Dates>
+            <Responsibilities>
+                <Task>Led a 9-person team to design and teach cloud computing related courses.</Task>
+                <Task>Enhanced cross-team communication and promoted a flat team structure.</Task>
+            </Responsibilities>
+        </Position>
+        <Position>
+            <Title>Agenda Committee Duty Lead</Title>
+            <Organization>SITCON</Organization>
+            <Dates>Sep 2023 – Mar 2024</Dates>
+            <Responsibilities>
+                <Task>Organized a tech conference attended by over 1,000 students from more than 50 schools.</Task>
+                <Task>Managed nearly 200 tasks for agenda and event planning using GitLab.</Task>
+            </Responsibilities>
+        </Position>
+        <Position>
+            <Title>Teaching Assistant</Title>
+            <Organization>NTNU</Organization>
+            <Course>Learning Analytics Tools Implementation Applications</Course>
+            <Program>The Program of Big Data in Education</Program>
+            <Dates>Sep 2023 – Dec 2023</Dates>
+            <Responsibilities>
+                <Task>Guided students in projects, focusing on data analysis with Python, Selenium, and Plotly.js.</Task>
+                <Task>Assisted in hands-on sessions involving Azure and Flask for NLP service and deployment.</Task>
+            </Responsibilities>
+        </Position>
+    </Experience>
+    <Competitions>
+        <Competition>
+            <Name>IIIEDU Senior Cup Student Game Design Category</Name>
+            <Award>Best Team Award</Award>
+            <Year>2024</Year>
+            <Details>
+                Developed a 2D RPG web game for all ages using the Phaser 3 JavaScript framework. Learned from scratch in four days and completed development in two days.
+            </Details>
+        </Competition>
+        <Competition>
+            <Name>Taiwan International Science Fair</Name>
+            <Award>Finalist</Award>
+            <Year>2022</Year>
+            <Details>
+                Identified incomplete news posts on Facebook using PyTorch and Simple Transformers. Achieved top F1 macro score of 78.5 with RoBERTa among three transfer learning models. Applied real data to reveal underperforming media on Facebook news posts.
+            </Details>
+        </Competition>
+    </Competitions>
+    <Projects>
+        <Project>
+            <Name>2024 NTNU CSIE Camp Website</Name>
+            <Contributions>
+                <Task>Contributed the highest with 82 commits, leading front-end design and feature enhancements.</Task>
+                <Task>Attracted 1,500 unique visitors in three months with over 50% scroll depth.</Task>
+            </Contributions>
+        </Project>
+        <Project>
+            <Name>AHSNCCU Student ID Card Library Access Management System</Name>
+            <Details>
+                Developed a Python-based student ID access management system with cloud synchronization, enabling teachers to monitor library study activity in real-time.
+            </Details>
+        </Project>
+    </Projects>
+    <LectureExperience>
+        <Lecture>
+            <Event>NTNU CSIE Camp</Event>
+            <Topic>Machine Learning</Topic>
+            <Details>3 hrs from theory to computer vision practice.</Details>
+        </Lecture>
+        <Lecture>
+            <Event>GDSC NTNU</Event>
+            <Topic>Core Team - Speaker</Topic>
+            <Details>
+                4 hours for data processing with Python and web scraping with Selenium. 2 hours for front-end CSS.
+            </Details>
+        </Lecture>
+    </LectureExperience>
+
+</Resume>
