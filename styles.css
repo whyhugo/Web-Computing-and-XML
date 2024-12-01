@@ -329,6 +329,11 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.day-schedule ul {
+  text-align: left;
+  line-height: 2;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .schedule-buttons {
