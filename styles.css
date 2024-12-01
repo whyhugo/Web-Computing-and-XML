@@ -6,6 +6,10 @@ body {
   box-sizing: border-box;
 }
 
+.content {
+  margin: 0 36px;
+}
+
 a {
   text-decoration: none;
 }
