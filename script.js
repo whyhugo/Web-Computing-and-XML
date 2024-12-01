@@ -89,16 +89,16 @@ function loadResume() {
 }
 
 // Highlight the current page button
-document.addEventListener("DOMContentLoaded", () => {
-    const navLinks = document.querySelectorAll(".topnav a");
-    const currentPage = window.location.pathname;
-  
-    navLinks.forEach(link => {
-      if (link.href.includes(currentPage)) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
-  });
+//document.addEventListener("DOMContentLoaded", () => {
+//    const navLinks = document.querySelectorAll(".topnav a");
+//    const currentPage = window.location.pathname;
+//  
+//    navLinks.forEach(link => {
+//      if (link.href.includes(currentPage)) {
+//        link.classList.add("active");
+//      } else {
+//        link.classList.remove("active");
+//      }
+//    });
+//  });
   
