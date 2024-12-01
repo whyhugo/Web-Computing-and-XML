@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>HTML5 Pactice Page - Schedule</title>
-    <link href="styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html" id="home">Home</a>
-      <a href="schedule.html" id="schedule" class="active">Schedule</a>
-      <a href="contact.html" id="contact">Contact</a>
-      <a href="resume.html" id="resume">Resume</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
 
-    <div class="content">
-      <h1>Schedule</h1>
-    </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>HTML5 Pactice Page - Schedule</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
 
-    <script src="script.js"></script>
-    <footer>
-      <p>&copy; 2024 whyhugo. All rights reserved.</p>
-      <p>NTNU Web Computing and XML. </p>
-    </footer>
-  </body>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" id="home">Home</a>
+    <a href="schedule.html" id="schedule" class="active">Schedule</a>
+    <a href="contact.html" id="contact">Contact</a>
+    <a href="resume.html" id="resume">Resume</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="content">
+    <h1>Schedule</h1>
+    <main>
+
+      <!-- Schedule Table -->
+      <section class="schedule-section">
+        <h1>My Weekly Schedule</h1>
+        <div class="schedule-table-section">
+          <p>Here is my current schedule for the semester:</p>
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08:10 - 09:00</td>
+                <td>Linear Algebra<br>理圖003</td>
+                <td></td>
+                <td>Linear Algebra<br>理圖003</td>
+                <td></td>
+                <td>Linear Algebra<br>理圖003</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>09:10 - 10:00</td>
+                <td>Excel for Data Analysis<br>系所自排</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Excel for Data Analysis<br>系所自排</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10:20 - 11:10</td>
+                <td></td>
+                <td>Network Computing and XML<br>Ｂ103</td>
+                <td>Network Computing and XML<br>Ｂ103</td>
+                <td>Network Computing and XML<br>Ｂ103</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+        <div class="schedule-button-section">
+          <!-- Schedule Section -->
+          <p>Select a day to view the schedule:</p>
+
+          <!-- Buttons for days -->
+          <div class="schedule-buttons">
+            <button onclick="showSchedule('Monday')">Monday</button>
+            <button onclick="showSchedule('Tuesday')">Tuesday</button>
+            <button onclick="showSchedule('Wednesday')">Wednesday</button>
+            <button onclick="showSchedule('Thursday')">Thursday</button>
+            <button onclick="showSchedule('Friday')">Friday</button>
+            <button onclick="showSchedule('Saturday')">Saturday</button>
+          </div>
+
+          <!-- Placeholder for the day's schedule -->
+          <div id="daySchedule" class="day-schedule">
+            <p>Select a day to see the schedule here.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="schedule.js"></script>
+  <footer>
+    <p>&copy; 2024 whyhugo. All rights reserved.</p>
+    <p>NTNU Web Computing and XML. </p>
+  </footer>
+</body>
+
 </html>

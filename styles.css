@@ -269,3 +269,86 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+/* Schedule Section */
+.schedule-button-section {
+  display: none;
+}
+
+.schedule-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.schedule-table td {
+  font-size: 0.9rem;
+}
+
+.schedule-table td:not(:empty) {
+  background-color: #f9f9f9;
+}
+
+.schedule-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-buttons button:hover {
+  background-color: #45a049;
+}
+
+.day-schedule {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .schedule-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .schedule-buttons button {
+      width: 45%;
+      margin: 5px 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-button-section {
+    display: block;
+  }
+  
+  .schedule-table-section {
+    display: none;
+  }
+}
