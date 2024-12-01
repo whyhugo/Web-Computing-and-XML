@@ -189,14 +189,20 @@ footer a {
 /* Linktree */
 .linktree-section {
   text-align: center;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .linktree {
   list-style: none;
   padding: 0;
   margin: 20px auto;
-  max-width: 300px;
+  max-width: 350px;
+}
+
+@media screen and (max-width: 600px) {
+  .linktree {
+    max-width: 100%;
+  }
 }
 
 .linktree li {
