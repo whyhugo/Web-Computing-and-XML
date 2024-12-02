@@ -96,7 +96,7 @@ a:hover {
 /* Footer */
 footer {
   background-color: var(--primary-color);
-  color: #f2f2f2;
+  color: var(--white-text-color);
   text-align: center;
   padding: 10px 0;
   /*position: fixed;*/
@@ -106,8 +106,12 @@ footer {
 }
 
 footer a {
-  color: #7eddfa;
+  color: var(--white-text-color);
   margin: 0 5px;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
 }
 
 /* Hero Section */
