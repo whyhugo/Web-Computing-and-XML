@@ -1,10 +1,10 @@
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
 //Animate on scroll
@@ -28,7 +28,7 @@ addClassToVisibleElements();
 //document.addEventListener("DOMContentLoaded", () => {
 //    const navLinks = document.querySelectorAll(".topnav a");
 //    const currentPage = window.location.pathname;
-//  
+//
 //    navLinks.forEach(link => {
 //      if (link.href.includes(currentPage)) {
 //        link.classList.add("active");
@@ -37,4 +37,3 @@ addClassToVisibleElements();
 //      }
 //    });
 //  });
-  
