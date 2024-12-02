@@ -1,9 +1,23 @@
+/* Reset Styles */
+:root {
+  --primary-color: #23606E;
+  --secondary-color: #FACFCE;
+  --secondary-color-light: #FFECEB;
+  --banner-color: #008F8C;
+  --black-text-color: black;
+  --white-text-color: #f2f2f2;
+  --background-color: #f9f9f9;
+  --link-color: #023535;
+  --link-hover-color: #015958;
+}
+
 /* General Styles */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  background-color: var(--background-color);
 }
 
 .content {
@@ -11,13 +25,19 @@ body {
 }
 
 a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover-color);
   text-decoration: none;
 }
 
 /* Navigation Bar */
 .topnav {
   overflow: hidden;
-  background-color: #23606E;
+  background-color: var(--primary-color);
   position: relative; /* Ensure z-index takes effect */
   z-index: 10; /* Ensure navbar is above other elements */
 }
@@ -25,17 +45,17 @@ a {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--white-text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: #23606E;
+  background-color: var(--secondary-color-light);
+  color: var(--primary-color);
 }
 
 .topnav .icon {
@@ -43,8 +63,8 @@ a {
 }
 
 .topnav a.active {
-  background-color: #FACFCE; /* Customize the background color */
-  color: black; /* Customize the text color */
+  background-color: var(--secondary-color);
+  color: var(--black-text-color);
 }
 
 @media screen and (max-width: 600px) {
@@ -67,11 +87,14 @@ a {
     display: block;
     text-align: left;
   }
+  .topnav.responsive #home.active ~ .icon {
+    color: var(--black-text-color);
+  }
 }
 
 /* Footer */
 footer {
-  background-color: #23606E;
+  background-color: var(--primary-color);
   color: #f2f2f2;
   text-align: center;
   padding: 10px 0;
@@ -111,34 +134,46 @@ footer a {
   display: block;
 }
 
-.cta-button {
-  background-color: #6c63ff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
 /* About Section */
 .about {
-  background-color: #fff;
-  padding: 80px 20px;
+  padding: 80px 20px 20px 20px;
   text-align: center;
 }
 
 .about-content {
+  display: flex;
+  flex-direction: column;
   z-index: 1;
   position: relative;
+  align-items: center;
 }
 
 .about img {
-  max-width: 40%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.about .avatar-section {
+  border: 1px solid var(--background-color);
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 @media screen and (max-width: 600px) {
+  .about .avatar-section {
+    width: 100%;
+  }
+
   .about img {
     max-width: 100%;
     height: auto;
@@ -220,15 +255,19 @@ footer a {
   display: block;
   padding: 10px 15px;
   border-radius: 10px;
-  background-color: #6c63ff;
-  color: white;
+  background-color: var(--background-color);
+  border: 2.5px solid var(--primary-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .linktree a:hover {
-  background-color: #5548c3;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 2px 0px var(--secondary-color);
 }
 
 .fa-brands, .fa-solid {
@@ -262,15 +301,15 @@ textarea {
 }
 
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white-text-color);
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: var(--banner-color);
 }
 
 /* Schedule Section */
@@ -297,8 +336,8 @@ button:hover {
 }
 
 .schedule-table th {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--banner-color);
+  color: var(--white-text-color);
 }
 
 .schedule-table td {
@@ -306,30 +345,36 @@ button:hover {
 }
 
 .schedule-table td:not(:empty) {
-  background-color: #f9f9f9;
+  background-color: #f0f0f0; /* Custom color for filled cells */
 }
 
 .schedule-buttons button {
   padding: 10px 20px;
   margin: 5px;
   border: none;
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white-text-color);
   cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .schedule-buttons button:hover {
-  background-color: #45a049;
+  background-color: var(--banner-color);
+  color: var(--white-text-color);
+}
+
+.schedule-buttons button.active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .day-schedule {
   margin-top: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .day-schedule ul {

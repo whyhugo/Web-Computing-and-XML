@@ -55,4 +55,14 @@ const schedules = {
 function showSchedule(day) {
     const scheduleElement = document.getElementById('daySchedule');
     scheduleElement.innerHTML = `<h3>${day}'s Schedule</h3>` + schedules[day];
+
+    // Remove 'active' class from all buttons
+    const buttons = document.querySelectorAll('.schedule-buttons button');
+    buttons.forEach(button => button.classList.remove('active'));
+
+    // Add 'active' class to the clicked button
+    const activeButton = document.querySelector(`button[onclick="showSchedule('${day}')"]`);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
 }
