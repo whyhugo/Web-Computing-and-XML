@@ -17,7 +17,7 @@ a {
 /* Navigation Bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #23606E;
   position: relative; /* Ensure z-index takes effect */
   z-index: 10; /* Ensure navbar is above other elements */
 }
@@ -35,7 +35,7 @@ a {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #23606E;
 }
 
 .topnav .icon {
@@ -43,8 +43,8 @@ a {
 }
 
 .topnav a.active {
-  background-color: #04AA6D; /* Customize the background color */
-  color: white; /* Customize the text color */
+  background-color: #FACFCE; /* Customize the background color */
+  color: black; /* Customize the text color */
 }
 
 @media screen and (max-width: 600px) {
@@ -71,7 +71,7 @@ a {
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #23606E;
   color: #f2f2f2;
   text-align: center;
   padding: 10px 0;
@@ -97,6 +97,7 @@ footer a {
 .hero-content {
   z-index: 1;
   position: relative;
+  color: #fff;
 }
 
 #hero-svg {
