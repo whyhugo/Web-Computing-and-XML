@@ -179,6 +179,7 @@ footer a:hover {
 }
 
 .about .avatar-section {
+  margin: 16px 0 0 0;
   border: 1px solid var(--background-color);
   width: 40%;
   display: flex;
