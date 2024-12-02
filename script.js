@@ -35,7 +35,7 @@ function loadResume() {
 
                 <h2>Education</h2>
                 <p>Degree: ${education.querySelector('Degree').textContent}</p>
-                <p>Institution: ${education.querySelector('Institution').textContent}</p>
+                <p>School: ${education.querySelector('School').textContent}</p>
                 <p>Graduation Date: ${education.querySelector('GraduationDate').textContent}</p>
                 <p>GPA: ${education.querySelector('GPA').textContent}</p>
 

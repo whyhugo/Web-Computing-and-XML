@@ -11,7 +11,7 @@
     </PersonalInformation>
     <Education>
         <Degree>B.S. Computer Science and Information Engineering</Degree>
-        <Institution>National Taiwan Normal University</Institution>
+        <School>National Taiwan Normal University</School>
         <GraduationDate>Jun 2027 (expected)</GraduationDate>
         <GPA>3.4/4.3</GPA>
     </Education>
@@ -41,6 +41,7 @@
             <Program>The Program of Big Data in Education</Program>
             <Dates>Sep 2023 – Dec 2023</Dates>
             <Responsibilities>
+                <Task>Course: Learning Analytics Tools Implementation Applications, The Program of Big Data in Education</Task>
                 <Task>Guided students in projects, focusing on data analysis with Python, Selenium, and Plotly.js.</Task>
                 <Task>Assisted in hands-on sessions involving Azure and Flask for NLP service and deployment.</Task>
             </Responsibilities>
@@ -74,9 +75,9 @@
         </Project>
         <Project>
             <Name>AHSNCCU Student ID Card Library Access Management System</Name>
-            <Details>
-                Developed a Python-based student ID access management system with cloud synchronization, enabling teachers to monitor library study activity in real-time.
-            </Details>
+            <Contributions>
+                <Task>Developed a Python-based student ID access management system with cloud synchronization, enabling teachers to monitor library study activity in real-time.</Task>
+            </Contributions>
         </Project>
     </Projects>
     <LectureExperience>
@@ -93,5 +94,4 @@
             </Details>
         </Lecture>
     </LectureExperience>
-
 </Resume>
