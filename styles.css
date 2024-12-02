@@ -35,6 +35,23 @@ a:hover {
   text-decoration: none;
 }
 
+/* Animation Styles */
+.aos {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.aos.ed {
+  opacity: 1;
+}
+
+.slideIn {
+  transform: translateY(1em);
+}
+.slideIn.ed {
+  transform: translateY(0em);
+}
+
 /* Navigation Bar */
 .topnav {
   overflow: hidden;
