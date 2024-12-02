@@ -361,3 +361,7 @@ button:hover {
     display: none;
   }
 }
+
+.resume-container {
+  margin-bottom: 80px;
+}
