@@ -196,8 +196,11 @@ footer a:hover {
   position: relative;
   width: 100%; /* 影片容器填滿父層寬度 */
   max-width: 800px; /* 設置影片的最大寬度 */
+  max-height: 450px; /* 設置影片的最大高度 */
   margin: 0 auto; /* 置中容器 */
-  padding-top: 56.25%; /* 設置影片比例為 16:9 (9/16 = 0.5625) */
+  aspect-ratio: 16 / 9; /* 設置影片比例為 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .video-container iframe {
@@ -206,7 +209,6 @@ footer a:hover {
   left: 0;
   width: 100%; /* 影片寬度與容器一致 */
   height: 100%; /* 影片高度與容器一致 */
-  border: none; /* 移除邊框 */
 }
 
 /* Spotify Section */
