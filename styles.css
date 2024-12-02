@@ -78,6 +78,7 @@ footer {
   /*position: fixed;*/
   width: 100%;
   bottom: 0;
+  margin-top: 80px;
 }
 
 footer a {
@@ -362,8 +363,4 @@ button:hover {
   .schedule-table-section {
     display: none;
   }
-}
-
-.resume-container {
-  margin-bottom: 80px;
 }
