@@ -22,6 +22,7 @@ body {
 
 .content {
   margin: 0 36px;
+  min-height: calc(100vh - 175.333px - 78.773px);
 }
 
 a {
@@ -231,13 +232,13 @@ footer a {
 /* Linktree */
 .linktree-section {
   text-align: center;
-  margin: 10px 0;
+  padding: 0 0 20px 0;
 }
 
 .linktree {
   list-style: none;
   padding: 0;
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 350px;
 }
 
@@ -276,7 +277,7 @@ footer a {
 
 /* Contact Form */
 .contact-section {
-  padding: 50px 0;
+  padding: 0 0 0 0;
 }
 
 .contact-section form {
@@ -393,13 +394,13 @@ button:hover {
   }
 
   .schedule-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .schedule-buttons button {
-      width: 45%;
-      margin: 5px 2%;
+    width: 45%;
+    margin: 5px 2%;
   }
 }
