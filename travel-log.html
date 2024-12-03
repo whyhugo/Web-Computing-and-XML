@@ -1,53 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>HTML5 Pactice Page - Home</title>
-	<link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Travel Journal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="styles.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND4ZR865YM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ND4ZR865YM');
+  </script>
+  <!-- Clarity tag -->
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "p7jv17out3");
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND4ZR865YM"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    body {
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
 
-		gtag('config', 'G-ND4ZR865YM');
-	</script>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-	<!-- Clarity tag -->
-	<script type="text/javascript">
-		(function (c, l, a, r, i, t, y) {
-			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-		})(window, document, "clarity", "script", "p7jv17out3");
-	</script>
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .travel-entry {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      max-width: 840px;
+    }
+
+    .travel-entry img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .travel-entry h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .travel-details {
+      display: flex;
+      justify-content: space-between;
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .travel-details span {
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      .travel-details {
+        flex-direction: column;
+      }
+    }
+
+    /* Card Stack */
+    :root {
+      --card-height: 40vw;
+      --card-margin: 4vw;
+      --card-top-offset: 1rem;
+    }
+
+    #card1 {
+      --index: 0;
+    }
+
+    #card2 {
+      --index: 1;
+    }
+
+    #card3 {
+      --index: 2;
+    }
+
+    #card4 {
+      --index: 3;
+    }
+
+    #card5 {
+      --index: 4;
+    }
+
+    .stacked {
+      .cards {
+        --cards: 5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(var(--cards), var(--card-height));
+        gap: var(--card-margin);
+        margin-bottom: var(--card-margin);
+        padding-bottom: calc(var(--card-s) * var(--card-top-offset));
+        list-style: none;
+        view-timeline-name: --stacked-cards;
+
+        .card {
+          --r-index: calc(var(--cards) - var(--index) - 1);
+          position: sticky;
+          top: 2.5vh;
+          padding-top: calc((var(--index) + 1) * var(--card-top-offset));
+
+          .content-1 {
+            --start: calc(var(--index) / var(--cards) * 100%);
+            --end: calc((var(--index) + 1) / var(--cards) * 100%);
+            transform-origin: 50% 0%;
+            will-change: transform;
+            animation: linear scale forwards;
+            animation-timeline: --stacked-cards;
+            animation-range: exit-crossing var(--start) exit-crossing var(--end);
+          }
+        }
+      }
+    }
+
+    @keyframes scale {
+      to {
+        transform: scale(calc(1 - calc(0.1 * var(--r-index))));
+      }
+    }
+  </style>
 </head>
 
 <body>
-	<div class="topnav" id="myTopnav">
-		<a href="/Web-Computing-and-XML/" id="home" class="active">Home</a>
-		<a href="schedule.html" id="schedule">Schedule</a>
-		<a href="contact.html" id="contact">Contact</a>
-		<a href="resume.html" id="resume">Resume</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		</a>
-	</div>
 
-	<div class="content"></div>
-	<script src="js/script.js"></script>
-	<footer>
-		<p>&copy; 2024 whyhugo. All rights reserved.</p>
-		<p>NTNU Web Computing and XML. </p>
-		<p>
-			<a href="https://github.com/whyhugo" target="_blank">GitHub</a> |
-			<a href="https://linkedin.com/in/whyhugo" target="_blank">LinkedIn</a>
-		</p>
-	</footer>
+  <div class="topnav" id="myTopnav">
+    <a href="/Web-Computing-and-XML/" id="home" class="active">Home</a>
+    <a href="schedule.html" id="schedule">Schedule</a>
+    <a href="contact.html" id="contact">Contact</a>
+    <a href="resume.html" id="resume">Resume</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <section class="stacked">
+    <ui class="cards">
+      <li class="card" id="card1">
+        <div class="content-1">
+          <img src="https://live.staticflickr.com/65535/53596263568_359d0b8aba_o.jpg" alt="Tokyo Cityscape" width="840"
+        height="472.5">
+        </div>
+      </li>
+      <li class="card" id="card2">
+        <div class="content-1">
+          <img src="https://live.staticflickr.com/65535/53596377534_8016ee2229_o.jpg" alt="Tokyo Cityscape" width="840"
+        height="472.5">
+        </div>
+      </li>
+      <li class="card" id="card3">
+        <div class="content-1">
+          <img src="https://live.staticflickr.com/65535/53596273988_55c6f54899_o.jpg" alt="Tokyo Cityscape" width="840"
+        height="472.5">
+        </div>
+      </li>
+      <li class="card" id="card4">
+        <div class="content-1">
+          <img src="https://live.staticflickr.com/65535/53596549360_61dd0030d6_o.jpg" alt="Tokyo Cityscape" width="840"
+        height="472.5">
+        </div>
+      </li>
+      <li class="card" id="card5">
+        <div class="content-1">
+          <img src="https://live.staticflickr.com/65535/53595229952_6e8b72feef_o.jpg" alt="Tokyo Cityscape" width="840"
+        height="472.5">
+        </div>
+      </li>
+    </ui>
+  </section>
+
+  <div class="container">
+    <div class="travel-entry">
+      <h2>Exploring Tokyo, Japan</h2>
+      <img src="https://live.staticflickr.com/65535/53596074796_a9b1355c47_o.jpg" alt="Tokyo Cityscape" width="800"
+        height="400">
+      <!--<a data-flickr-embed="true" href="https://www.flickr.com/photos/whyhugo/53596074796/in/album-72177720315544079" title="IMG_20240319_031930_946"><img src="https://live.staticflickr.com/65535/53596074796_a9b1355c47_o.jpg" width="4624" height="2604" alt="IMG_20240319_031930_946"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>-->
+      <div class="travel-details">
+        <span>📅 Dates: May 15 - May 25, 2024</span>
+        <span>📍 Location: Tokyo, Japan</span>
+        <span>🏨 Accommodation: Shibuya Hotel</span>
+      </div>
+      <p>An incredible journey through the vibrant streets of Tokyo. From the bustling Shibuya Crossing to the serene
+        Meiji Shrine, every moment was a blend of modern technology and traditional culture. Highlights included trying
+        authentic ramen, experiencing the unique gaming arcades, and witnessing the breathtaking cherry blossoms.</p>
+    </div>
+    <div class="travel-entry">
+      <h2>Safari Adventure in Kenya</h2>
+      <img src="/api/placeholder/800/400" alt="Safari Landscape">
+      <div class="travel-details">
+        <span>📅 Dates: July 5 - July 15, 2024</span>
+        <span>📍 Location: Masai Mara, Kenya</span>
+        <span>🏕️ Accommodation: Luxury Tented Camp</span>
+      </div>
+      <p>An unforgettable safari experience in the heart of the Masai Mara National Reserve. Witnessed the incredible
+        wildlife - lions, elephants, giraffes, and the famous wildebeest migration. The nights under the starry African
+        sky, listening to the sounds of the wilderness, were truly magical.</p>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2024 whyhugo. All rights reserved.</p>
+    <p>NTNU Web Computing and XML. </p>
+    <p>
+      <a href="https://github.com/whyhugo" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/whyhugo" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 </body>
 
 </html>
