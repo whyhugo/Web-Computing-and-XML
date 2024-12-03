@@ -1,0 +1,179 @@
+/* Reset Styles */
+:root {
+    --primary-color: #23606E;
+    --secondary-color: #FACFCE;
+    --secondary-color-light: #FFECEB;
+    --banner-color: #008F8C;
+    --black-text-color: black;
+    --white-text-color: #f2f2f2;
+    --background-color: #f9f9f9;
+    --link-color: #023535;
+    --link-hover-color: #015958;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.travel-entry {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 840px;
+}
+
+.travel-entry img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.travel-entry h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.travel-details {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.travel-details span {
+    font-weight: bold;
+    color: #34495e;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .travel-details {
+        flex-direction: column;
+    }
+}
+
+/* Card Stack */
+:root {
+    --card-height: 40vw;
+    --card-margin: 4vw;
+    --card-top-offset: 1rem;
+}
+
+/* 設定 index => 編號 - 1 */
+#card1 {
+    --index: 0;
+    .card-content {
+        background-image: url('https://live.staticflickr.com/65535/53596263568_359d0b8aba_o.jpg');
+    }
+}
+
+#card2 {
+    --index: 1;
+    .card-content {
+        background-image: url('https://live.staticflickr.com/65535/53596377534_8016ee2229_o.jpg');
+    }
+}
+
+#card3 {
+    --index: 2;
+    .card-content {
+        background-image: url('https://live.staticflickr.com/65535/53596273988_55c6f54899_o.jpg');
+    }
+}
+
+#card4 {
+    --index: 3;
+    .card-content {
+        background-image: url('https://live.staticflickr.com/65535/53596549360_61dd0030d6_o.jpg');
+    }
+}
+
+#card5 {
+    --index: 4;
+    .card-content {
+        background-image: url('https://live.staticflickr.com/65535/53595229952_6e8b72feef_o.jpg');
+    }
+}
+
+@media (max-width: 768px) {
+    .stacked {
+        width: 95%;
+    }
+}
+
+
+
+.stacked {
+    max-width: 880px;
+    margin: auto;
+    .cards {
+        /* 設定卡片數量 */
+        --cards: 5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(var(--cards), var(--card-height));
+        gap: var(--card-margin);
+        margin-bottom: var(--card-margin);
+        padding-bottom: calc(var(--card-s) * var(--card-top-offset));
+        list-style: none;
+        /* 設定命名查看進度時間軸 */
+        view-timeline-name: --stacked-cards;
+
+        .card {
+            /* 設定反向 index */
+            --r-index: calc(var(--cards) - var(--index) - 1);
+            /* 使卡片固定在距離頂端 2.5vh 處 */
+            position: sticky;
+            top: 2.5vh;
+            /* 每張卡片設定不同 padding-top => 堆疊效果 */
+            /* var(--index) + 1 使 #card1 的 padding-top 不為 0 */
+            padding-top: calc((var(--index) + 1) * var(--card-top-offset));
+
+            .card-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                border-radius: 10px;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+                /* 設定動畫開始範圍變數 */
+                --start: calc(var(--index) / var(--cards) * 100%);
+                /* 設定動畫結束範圍變數 */
+                /* var(--index) + 1 使動畫結束範圍 > 開始範圍，且 #card1 的動畫結束範圍不為 0% */
+                --end: calc((var(--index) + 1) / var(--cards) * 100%);
+                /* 設定 transform 起始點 => x 軸 50% 、 y 軸 0% 處 */
+                transform-origin: 50% 0%;
+                /* 提示瀏覽器該元素會有 CSS 改變 */
+                will-change: transform;
+                /* 設定動畫、時間軸及範圍 */
+                animation: linear scale forwards;
+                animation-timeline: --stacked-cards;
+                animation-range: exit-crossing var(--start) exit-crossing var(--end);
+            }
+        }
+    }
+}
+
+@keyframes scale {
+    to {
+        /*  設定卡片縮放尺寸 => 越前面卡片越小、越後面卡片越大 */
+        transform: scale(calc(1 - calc(0.1 * var(--r-index))));
+    }
+}
