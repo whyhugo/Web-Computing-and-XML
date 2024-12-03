@@ -1,0 +1,86 @@
+/* Linktree */
+.linktree-section {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.linktree {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+@media screen and (max-width: 600px) {
+    .linktree {
+        max-width: 100%;
+    }
+}
+
+.linktree li {
+    margin: 10px 0;
+}
+
+.linktree a {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    border: 2.5px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.linktree a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 2px 0px var(--secondary-color);
+}
+
+.fa-brands,
+.fa-solid {
+    margin-right: 10px;
+}
+
+/* Contact Form */
+.contact-section {
+    padding: 0 0 0 0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--white-text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--banner-color);
+}
