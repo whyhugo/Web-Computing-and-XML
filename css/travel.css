@@ -41,7 +41,7 @@
 }
 
 .travel-entry h2 {
-    color: #2c3e50;
+    color: var(--primary-color);
     margin-top: 0;
 }
 
@@ -53,14 +53,14 @@
 .travel-details {
     display: flex;
     justify-content: space-between;
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: var(--secondary-color-light);
+    padding: 10px 17.5px;
+    border-radius: 10px;
 }
 
 .travel-details span {
     font-weight: bold;
-    color: #34495e;
+    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
