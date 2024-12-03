@@ -114,8 +114,6 @@
     }
 }
 
-
-
 .stacked {
     max-width: 880px;
     margin: auto;
@@ -152,7 +150,7 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+                box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6);
                 /* 設定動畫開始範圍變數 */
                 --start: calc(var(--index) / var(--cards) * 100%);
                 /* 設定動畫結束範圍變數 */
