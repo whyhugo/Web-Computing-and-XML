@@ -1,22 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>HTML5 Pactice Page - Home</title>
+	<link href="styles.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND4ZR865YM"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-ND4ZR865YM');
+	</script>
+
+	<!-- Clarity tag -->
+	<script type="text/javascript">
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "p7jv17out3");
+	</script>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Simple Webpage</h1>
-    </header>
-    <main>
-        <p id="intro">This is a sample webpage created using separate HTML, CSS, and JavaScript files.</p>
-        <button id="changeColorBtn">Change Background Color</button>
-    </main>
-    <footer>
-        <p>© 2024 Simple Webpage</p>
-    </footer>
-    <script src="script.js"></script>
+	<div class="topnav" id="myTopnav">
+		<a href="/Web-Computing-and-XML/" id="home" class="active">Home</a>
+		<a href="schedule.html" id="schedule">Schedule</a>
+		<a href="contact.html" id="contact">Contact</a>
+		<a href="resume.html" id="resume">Resume</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<header class="hero">
+		<div class="hero-content">
+			<h1>Welcome to My HTML5 Practice Page</h1>
+			<p>✨Hi, I'm Hugo. Like Cycling, Coding and Traveling.✨</p>
+		</div>
+		<svg id="hero-svg" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+			<path d="M0,300 C150,200 350,400 500,300 L500,0 L0,0 Z" fill="#008F8C">
+				<animate attributeName="d" dur="5s" repeatCount="indefinite" values="
+					  M0,300 C150,275 350,325 500,300 L500,0 L0,0 Z;
+					  M0,290 C200,310 300,190 500,290 L500,0 L0,0 Z;
+					  M0,300 C150,300 350,325 500,300 L500,0 L0,0 Z;">
+				</animate>
+			</path>
+		</svg>
+	</header>
+
+	<div class="content">
+		<!-- About Section -->
+		<section class="about">
+			<div class="about-content">
+				<h2 class="aos slideIn">About Me - Hugo</h2>
+				<p class="aos slideIn">"Enthusiasm" means that even when things don't go as expected, you still continue to work hard
+					without fear of difficulties. <a href="https://linktr.ee/whyhugo" target="_blank">Click here to
+						visit my linktree🌳</a></p>
+				<div class="aos slideIn avatar-section">
+					<img src="img/my_avatar.jpg" alt="My avatar" class="responsive">
+				</div>
+			</div>
+		</section>
+
+		<!-- Video Section -->
+		<section class="video-section">
+			<h2 class="aos slideIn">My Lecture</h2>
+			<div class="aos slideIn video-container">
+				<iframe src="https://www.youtube.com/embed/X7OCSoM_UMI?mute=1&vq=hd1080" frameborder="0"
+					allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+				</iframe>
+			</div>
+		</section>
+
+		<!-- Spotify Section -->
+		<section class="spotify-section">
+			<h2 class="aos slideIn">My Favorite Playlist</h2>
+			<div class="aos slideIn spotify-container">
+				<iframe style="border-radius:12px"
+					src="https://open.spotify.com/embed/playlist/37i9dQZF1DX74DDhiuyXIl?utm_source=generator"
+					width="100%" height="152" frameBorder="0" allowfullscreen=""
+					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					loading="lazy"></iframe>
+			</div>
+		</section>
+
+	</div>
+	<script src="js/script.js"></script>
+	<footer>
+		<p>&copy; 2024 whyhugo. All rights reserved.</p>
+		<p>NTNU Web Computing and XML. </p>
+		<p>
+			<a href="https://github.com/whyhugo" target="_blank">GitHub</a> |
+			<a href="https://linkedin.com/in/whyhugo" target="_blank">LinkedIn</a>
+		</p>
+	</footer>
 </body>
+
 </html>
