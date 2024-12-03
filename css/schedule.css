@@ -1,0 +1,91 @@
+.schedule-button-section {
+    display: none;
+}
+
+.schedule-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: var(--banner-color);
+    color: var(--white-text-color);
+}
+
+.schedule-table td {
+    font-size: 0.9rem;
+}
+
+.schedule-table td:not(:empty) {
+    background-color: #f0f0f0;
+    /* Custom color for filled cells */
+}
+
+.schedule-buttons button {
+    padding: 10px 0;
+    margin: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white-text-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.schedule-buttons button:hover {
+    background-color: var(--banner-color);
+    color: var(--white-text-color);
+}
+
+.schedule-buttons button.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.day-schedule {
+    margin-top: 20px;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.day-schedule ul {
+    text-align: left;
+    line-height: 2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .schedule-button-section {
+        display: block;
+    }
+
+    .schedule-table-section {
+        display: none;
+    }
+
+    .schedule-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .schedule-buttons button {
+        width: 45%;
+        margin: 5px 2%;
+    }
+}
