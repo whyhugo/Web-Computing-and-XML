@@ -69,7 +69,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .schedule-button-section {
         display: block;
     }
