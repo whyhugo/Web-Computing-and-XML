@@ -22,6 +22,7 @@ https://whyhugo.github.io/Web-Computing-and-XML/
   5 個頁面皆有 RWD 設計，詳見後段各頁面說明。
 - Accessibility
   - 至少符合 5 項 WCAG 2.1 Web Accessible Design
+    > [無障礙網路空間服務網 十三指引](https://accessibility.moda.gov.tw/Accessible/Guide/68)
     - 指引 1.3：可調適
       使用 RWD 設計適應網頁呈現於各種裝置，HTML 使用清楚且有意義的層次呈現。建立能以不同方式呈現（例如簡化的版面），而不會喪失資訊或結構的內容。
     - 指引 1.4：可辨識
@@ -33,7 +34,7 @@ https://whyhugo.github.io/Web-Computing-and-XML/
     - 指引 3.3：輸入協助
       Contact 頁面的聯絡表單若未完整輸入，會在錯誤欄位旁跳出輔助提示，幫助使用者避開及更正錯誤。
   - Chrome Lighthouse
-    5 個頁面共 10 項次的 Desktop display 和 Mobile display 在 Chrome Lighthouse Accessibility 測試全數皆超過 90 分，8 項次為滿分 100
+    5 個頁面的 Desktop display 和 Mobile display 在 Chrome Lighthouse Accessibility 共 10 項次的測試全數皆超過 90 分，其中 8 項次獲得滿分 100
 - User Experience
   - Navigation Bar
     讓使用者可以在 5 個頁面間連續且自由的切換，並且在當前頁面按鈕以醒目顏色提示。同時使用 RWD 設計在窄螢幕會以 Hamburger Bar 的方式呈現。
@@ -47,7 +48,7 @@ https://whyhugo.github.io/Web-Computing-and-XML/
   - 操作提示與回饋
     所有按鈕解採用醒目色彩，引導使用者正確操作。且有觸碰與點擊回饋。
   - Favicon
-    Favicon 圖片使用 DALL-E 生成。讓網頁在瀏覽器上的呈現具有標誌性。
+    Favicon 圖片使用 [DALL-E 生成](https://chatgpt.com/share/67516462-4b60-8013-8a78-713de17850e0)。讓網頁在瀏覽器上的呈現具有標誌性。
   - 配色方法使用 Adobe Color 色票，並且在 CSS 中以 root 方法管理
     - 色票資訊
       - Teal-and-Blush-1-hex { color: #23606E; }
