@@ -91,10 +91,10 @@
 - 自我介紹區段包含文字、圖片與超連結，游標觸碰圖片會有放大且不溢出邊框的動畫
 - 外部嵌入元素
   - YouTube Video。呈現尺寸跟隨整理 RWD 設定，並且同時維持 16:9 橫向呈現，允許全螢幕撥放、預設靜音、1080p 畫面呈現，提升使用者體驗
-  <img src="img\README_img\Home_YouTube.png" width="70%">
+    <img src="img\README_img\Home_YouTube.png" width="70%">
 
-  - Spotify Playlist
-  <img src="img\README_img\Home_Spotify.png" width="70%">
+  - Spotify Playlist  
+    <img src="img\README_img\Home_Spotify.png" width="70%">
 - Chrome Lighthouse Accessibility Score (Desktop/Mobile): 100/100
   > <a href="accessibility_doc/home.pdf" target="_blank"> Desktop report summary</a> / <a href="accessibility_doc/home_mobile.pdf" target="_blank"> Mobile report summary</a>
 
@@ -105,10 +105,11 @@
 
 呈現每週的課表，包含課程時間、名稱與地點。電腦版以表格方式完整呈現整週課表；手機版為避免橫向滾動，讓使用者改以按鈕方式自行選擇切換呈現其中一天的課表。
 <img src="img\README_img\Schedule_desktop_fullSize.png" width="60%">
+
 ### Feature
 - 表格首欄底色配合網頁主色系，並且通過文字背景對比度檢測
 - 使用 JavaScript 輔助 RWD 設計，為避免手機使用者出現橫向滾動，在手機版設計 6 個按鈕來選擇呈現單日課表
-<img src="img\README_img\Schedule_Mobile_fullSize.png" width="25%">
+  <img src="img\README_img\Schedule_Mobile_fullSize.png" width="25%">
 
 - 按鈕觸碰與點擊回饋運用 CSS transition 設計，配色配合網頁整體色票
 - 此頁面容易由於在手機版會有內容高度短於顯示器高度的情況，因此運用 css min-height 計算來解決
@@ -121,17 +122,20 @@
 > [https://whyhugo.github.io/Web-Computing-and-XML/travel.html](https://whyhugo.github.io/Web-Computing-and-XML/travel.html)
 
 此頁面呈現旅遊紀錄，包含自己過去旅遊過程中的拍攝作品與簡易遊記。
+
 <img src="img\README_img\Travel.png" width="30%">
 
 ### Feature
 - 整體頁面大多以方塊呈現資訊，每個方塊皆有陰影設計
 - 邊界距離完全一致
 - 頂部使用 Stacked images srcoll-driven animations 設計
-<img src="img\README_img\Travel_stackedImages.png" width="70%">
+  <img src="img\README_img\Travel_stackedImages.png" width="70%">
+
 - Stacked images 方塊中的圖片以 background image 方式呈現，使得圖片不容易被任意下載使用
 - 遊記方塊的四角圓弧與其中圖片方塊的圓弧半徑有 5px 的差距，符合協調性的設計原理
-- 遊記文字使用左右平均分散對齊
-<img src="img\README_img\Travel_Keelung.png" width="70%">
+- 遊記文字使用左右平均分散對齊  
+  <img src="img\README_img\Travel_Keelung.png" width="70%">
+
 - 圖片使用 Flickr 網址嵌入，缺點是畫質高會造成載入速度較慢，優點是可以降低 GitHub repo 的檔案大小負擔
 - Chrome Lighthouse Accessibility Score (Desktop/Mobile): 92/94
   > <a href="accessibility_doc/travel.pdf" target="_blank"> Desktop report summary</a> / <a href="accessibility_doc/travel_mobile.pdf" target="_blank"> Mobile report summary</a>
@@ -142,15 +146,15 @@
 > [https://whyhugo.github.io/Web-Computing-and-XML/contact.html](https://whyhugo.github.io/Web-Computing-and-XML/contact.html)
 
 此頁面首段以類似 link tree 的方式呈現我的社群媒體與 blog 連結。後段以表單方式讓使用者可以與我聯絡，不過目前尚未串接任何後端服務，僅提供前端功能。
+
 ### Feature
-- link tree 聯絡按鈕連結設計採用觸碰與點擊回饋
-<img src="img\README_img\Contact_linktree.png" width="50%">
+- link tree 聯絡按鈕連結設計採用觸碰與點擊回饋  
+  <img src="img\README_img\Contact_linktree.png" width="50%">
+  
 - link tree 按鈕中的 icon 使用 Font Awesome 服務
-- 使用 JavaScript 達成表單服務
-
-<img src="img\README_img\Contact_form.png" width="60%">
-
-<img src="img\README_img\Contact_formReply.png" width="60%">
+- 使用 JavaScript 達成表單服務  
+  <img src="img\README_img\Contact_form.png" width="60%">
+  <img src="img\README_img\Contact_formReply.png" width="60%">
 
 - Chrome Lighthouse Accessibility Score (Desktop/Mobile): 100/100
   > <a href="accessibility_doc/contact.pdf" target="_blank"> Desktop report summary</a> / <a href="accessibility_doc/contact_mobile.pdf" target="_blank"> Mobile report summary</a>
