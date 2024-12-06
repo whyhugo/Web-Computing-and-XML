@@ -27,18 +27,17 @@
   - 至少符合 5 項 WCAG 2.1 Web Accessible Design
     > [無障礙網路空間服務網 十三指引](https://accessibility.moda.gov.tw/Accessible/Guide/68)
     - 指引 1.3：可調適  
-      使用 RWD 設計適應網頁呈現於各種裝置，HTML 使用清楚且有意義的層次呈現。建立能以不同方式呈現（例如簡化的版面），而不會喪失資訊或結構的內容。
+      使用 RWD 設計適應網頁呈現於各種裝置，HTML 使用清楚且有意義的層次呈現。建立能以不同方式呈現（例如簡化的版面），而不會喪失資訊或結構的內容。  
       <img src="img\README_img\RWD_carbon.png" width="70%">
     - 指引 1.4：可辨識  
       網頁中所有文字與內容方塊皆有足夠的對比度與陰影設計，並且採用清楚且足夠的邊距布局。讓使用者能更容易地看見及聽到內容、區分前景和背景。
     - 指引 2.3：預防痙攣和身體不適反應  
       網頁所有元素每秒閃爍次數低於 3 次，且有淡入動畫呈現。無使用任何已知會引發痙攣或身體反應的方式來設計內容。
     - 指引 3.1：可讀性  
-      每個網頁指定語言（lang="en"），便於屏幕閱讀器正確朗讀並可理解。
+      每個網頁指定語言（lang="en"），便於屏幕閱讀器正確朗讀並可理解。 
       <img src="img\README_img\lang_carbon.png" width="70%">
     - 指引 3.3：輸入協助  
-      Contact 頁面的聯絡表單若未完整輸入，會在錯誤欄位旁跳出輔助提示，幫助使用者避開及更正錯誤。
-
+      Contact 頁面的聯絡表單若未完整輸入，會在錯誤欄位旁跳出輔助提示，幫助使用者避開及更正錯誤。  
       <img src="img\README_img\Contact_formNotice.png" width="50%">
   - Chrome Lighthouse  
     5 個頁面的 Desktop display 和 Mobile display 在 Chrome Lighthouse Accessibility 共 10 項次的測試全數皆超過 90 分，其中 8 項次獲得滿分 100
