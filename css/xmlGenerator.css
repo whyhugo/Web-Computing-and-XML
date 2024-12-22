@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #23606E;
+    --secondary-color: #FACFCE;
+    --secondary-color-light: #FFECEB;
+    --banner-color: #008F8C;
+    --black-text-color: black;
+    --white-text-color: #f2f2f2;
+    --background-color: #f9f9f9;
+    --link-color: #023535;
+    --link-hover-color: #015958;
+}
+
+textarea,
+pre {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+button,
+input[type="file"] {
+    display: block;
+    margin: 10px 0;
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: var(--background-color);
+    border-radius: 50px;
+    border: 1px solid #555;
+    margin-top: 10px;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out;
+}
+
+button,
+input[type="file"]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--white-text-color);
+    font-weight: 450;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    pointer-events: all;
+}
+
+button,
+input[type=file]::file-selector-button:hover {
+    background: var(--banner-color);
+    font-weight: 500;
+}
+
+button[class="generalButton"] {
+    width: 360px;
+    margin-right: 20px;
+    border: none;
+    background: var(--primary-color);
+    padding: 10px 0px;
+    border-radius: 50px;
+    color: var(--white-text-color);
+    font-weight: 450;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    pointer-events: all;
+}
+
+button[class="generalButton"]:hover {
+    background: var(--banner-color);
+    font-weight: 500;
+}
