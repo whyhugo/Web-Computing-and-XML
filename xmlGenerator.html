@@ -27,14 +27,19 @@
   <div class="content">
     <h1>XML Generator</h1>
     <main>
-      <p>請將輸入格式的純文字貼在下方（格式為 <球員被號>, <球員名稱>, <打席數>, <安打數>, <打擊率>），或選擇一個 TXT 檔案上傳：</p>
+      <p class="aos slideIn">請將輸入格式的純文字貼在下方（格式為 <球員被號>, <球員名稱>, <打席數>, <安打數>, <打擊率>），或選擇一個 TXT 檔案上傳：</p>
 
-      <textarea id="inputText" rows="10" placeholder="例如：&#10;30, Will Benson, 100, 23, 0.230"></textarea>
-      <input type="file" id="fileInput" accept=".txt">
-      <button class="generalButton" onclick="generateXML()">產生 XML</button>
-      <button class="generalButton" id="downloadBtn" style="display: none;" onclick="downloadXML()">下載 XML</button>
-      <h2>產生的 XML 文件：</h2>
-      <pre id="outputXML"></pre>
+      <textarea class="aos slideIn" id="inputText" rows="10"
+        placeholder="例如：&#10;30, Will Benson, 100, 23, 0.230"></textarea>
+      <div class="aos slideIn">
+        <input type="file" id="fileInput" accept=".txt">
+        <button class="generalButton" onclick="generateXML()">產生 XML</button>
+        <button class="generalButton" id="downloadBtn" style="display: none;" onclick="downloadXML()">下載
+          XML</button>
+      </div>
+
+      <h2 class="aos slideIn">Generated XML file：</h2>
+      <pre class="aos slideIn" id="outputXML"></pre>
     </main>
   </div>
 
